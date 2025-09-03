@@ -1,0 +1,143 @@
+
+.showEmp {
+  width: 100%; 
+  z-index: 1;
+  padding: 0;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08); 
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+
+.show-emp-container {
+  width: 100%; 
+  margin: 0 auto;
+  padding-top: 20px; 
+  height: calc(100vh - var(--navbar-height) - 20px); 
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.table-wrapper {
+  flex: 1; 
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.12); 
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+.emp-table thead th {
+  position: sticky;
+  top: 0;
+  background: none;
+  border: 0;
+  font-weight: 600;
+}
+.emp-table thead tr {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(
+    to right,
+    #0a4270,
+      #4b0082 
+  );
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+.emp-table th,
+.emp-table td {
+  padding: 12px 15px;
+  text-align: center;
+  color: #f1f1f1;
+  border: 0px solid rgba(255,255,255,0.2);
+  transition: all 0.2s ease;
+}
+
+.emp-table th {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+.emp-table tbody tr {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.emp-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scaleY(1);
+}
+
+.emp-table tbody tr:hover td {
+  border-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background-color: rgba(0, 123, 255, 0.85) !important;
+  color: #fff !important;
+}
+
+.btn-edit:hover {
+  background-color: rgba(0, 123, 255, 1) !important;
+  transform: scale(1.05);
+}
+
+.btn-delete {
+  background-color: rgba(220, 53, 69, 0.85) !important;
+  color: #fff !important;
+}
+.btn-delete:hover {
+  background-color: rgba(220, 53, 69, 1) !important;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .emp-table {
+    min-width: 100%;
+  }
+}

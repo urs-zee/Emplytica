@@ -1,0 +1,21 @@
+.footer {
+  background: rgba(255, 255, 255, 0.08); 
+  backdrop-filter: blur(10px); 
+  padding: 5px 0; 
+  text-align: center;
+  width: 100%; 
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+  position: relative; 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1; 
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+  margin-top: auto;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+}
