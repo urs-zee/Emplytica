@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { logoutUser } from "../services/authentication";
+import { logoutUser } from "../services/Authentication";
 import { useContext, useState } from "react";
 import { myContext } from "../../../context/MyContext";
 import { CircleUserRound } from "lucide-react";
