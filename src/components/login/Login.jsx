@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import { loginUser } from "../services/authentication";
+import { loginUser } from "../services/Authentication";
 import { myContext } from "../../../context/MyContext";
 import Footer from "../footer/Footer";
 
